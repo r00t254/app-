@@ -1,1 +1,40 @@
-<p>quotes works!</p>
+
+<div class="whole">
+    <h1>
+      Gates Quotes
+  </h1>
+  
+    <div class="container">
+      <p class="initial">Welcome to Gates Quotes<br>This where power comes not from only knowledge kept<br>but also from knowledge shared by different people </p>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="all-cards">
+            <div *ngFor="let quote of quotes; let i= index" class="card">
+              <div class="card-body">
+                <h4 class="card-title" quoteTitle>{{quote.title}}<button
+                  (click)='displayContent(1)' class="btn btn-info btn-sm" id="toggle-button">Toggle Info</button></h4>
+                <p class="card-text" id="param">{{quote.quote}}</p>
+                <app-quote-detail *ngIf="quote.showInformation" bind-quote="quote" (isComplete)="deleteQuote($event,i)"><button
+                  (click)='displayContent(1)' class="btn btn-info btn-sm" id="quotes-button"></button>
+                </app-quote-detail>
+  
+                <!-- <span id="when">Posted: {{quote.datePosted|dateCount}} * -->
+                  <!-- days ago.</span> </h6> --> -->
+               
+                <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}}</span><span id="date"> 
+                  Date:
+                  <span id="datecolor">{{
+                    quote.datePosted | date: "short"
+                  }}</span></span
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+      </div>
+    </div>
+  </div>
+</div>
