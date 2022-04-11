@@ -1,0 +1,37 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 19px;
+}
+.initial{
+    margin-top: 45px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.whole{
+    background-color: pink;
+    min-height: 95vh;
+}
+.card{
+    width:30rem;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    
+}
+.all-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#toggle-button{
+    float: right;
+    border-radius: 20px;
+}
+#date{
+    float:right;
+}
+
+#toggle-button{
+    background-color: #2a2f7a;
+}
