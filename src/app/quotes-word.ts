@@ -1,3 +1,5 @@
+// import { constructor } from "module";
+import { constructor } from "module";
 export class QuotesWord {
 }
 showInformation: boolean;

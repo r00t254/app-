@@ -12,17 +12,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteComponent } from './quotes/quotes.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
 import { DateCountPipe } from './date-count.pipe';
+import { QuotesDetailComponent } from './quotes-detail/quotes-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    QuotesComponent,
+    QuoteComponent,
     QuotesDetailComponent,
     DateCountPipe,
     QuoteFormComponent

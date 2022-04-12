@@ -1,3 +1,4 @@
+import { Quote } from '@angular/compiler/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
