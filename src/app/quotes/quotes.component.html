@@ -14,7 +14,7 @@
                 <h4 class="card-title" quoteTitle>{{quote.title}}<button
                   (click)='displayContent(1)' class="btn btn-info btn-sm" id="toggle-button">Toggle Info</button></h4>
                 <p class="card-text" id="param">{{quote.quote}}</p>
-                <app-quote-detail *ngIf="quote.showInformation" bind-quote="quote" (isComplete)="deleteQuote($event,i)"><button
+                <app-quote-detail *ngIf="quote.showInformation" bind-quote="quotes" (isComplete)="deleteQuote($event,i)"><button
                   (click)='displayContent(1)' class="btn btn-info btn-sm" id="quotes-button"></button>
                 </app-quote-detail>
   

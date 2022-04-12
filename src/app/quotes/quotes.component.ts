@@ -47,7 +47,8 @@
 
 // }
 import { Component, OnInit } from '@angular/core';
- import { Quotes } from '../quotes';
+ import { Quotes } from '../quotes-word';
+ 
  
 @Component({
   selector: 'app-quotes',
