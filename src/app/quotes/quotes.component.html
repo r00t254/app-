@@ -14,10 +14,13 @@
                 <h4 class="card-title" quoteTitle>{{quote.title}}<button
                   (click)='displayContent(1)' class="btn btn-info btn-sm" id="toggle-button">Toggle Info</button></h4>
                 <p class="card-text" id="param">{{quote.quote}}</p>
-                <app-quote-detail *ngIf="quote.showInformation" bind-quote="quotes" (isComplete)="deleteQuote($event,i)"><button
+                <div *ngIf="quote.showInformation">
+                  <app-quotes-detail [quoty]="quote" (isComplete)="deleteQuote($event, i)"></app-quotes-detail>
+              </div>
+                <!-- <app-quote-detail *ngIf="quote.showInformation" bind-quote="quotes" (isComplete)="deleteQuote($event,i)">
                   (click)='displayContent(1)' class="btn btn-info btn-sm" id="quotes-button"></button>
                 </app-quote-detail>
-  
+   -->
                 <!-- <span id="when">Posted: {{quote.datePosted|dateCount}} * -->
                   <!-- days ago.</span> </h6> --> -->
                
