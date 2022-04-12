@@ -1,6 +1,8 @@
 # QuotesWord
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+# Live Link 
+r00t254.github.io/application/
 
 ## Development server
 
