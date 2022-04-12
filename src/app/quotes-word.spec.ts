@@ -5,3 +5,7 @@ describe('QuotesWord', () => {
     expect(new QuotesWord()).toBeTruthy();
   });
 });
+function Word() {
+  throw new Error("Function not implemented.");
+}
+

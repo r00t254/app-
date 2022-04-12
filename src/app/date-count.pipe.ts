@@ -9,8 +9,8 @@ export class DateCountPipe implements PipeTransform {
     
     let timeCount: string = "";
     let today: any = new Date();
- var difference = Math.abs(value ,
-      today) / 1000;
+//  var difference = Math.abs(value - today'any' ) / 1000;
+var difference = Math.abs(value - today) / 1000;
     var days= Math.floor(difference / 86400);
     if(days > 0){
       timeCount+= Math.floor(days) +" days ";

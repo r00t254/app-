@@ -48,7 +48,7 @@
 // }
 import { Component, OnInit } from '@angular/core';
  import { Quotes } from '../quotes';
-
+ 
 @Component({
   selector: 'app-quotes',
   templateUrl: './quotes.component.html',
